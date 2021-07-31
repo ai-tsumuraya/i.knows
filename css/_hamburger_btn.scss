@@ -1,32 +1,35 @@
+div#app {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
 .hamburger_btn {
     position: absolute;
     width: 6rem;
-    top: 1.5rem;
-    right: 3rem;
+    top: 3rem;
+    right: 1rem;
     height: 4rem;
     cursor: pointer;
-    text-align: center;
-    z-index: 700;
 }
 
-.hamburger_btn {
-    // position: fixed;
-}
 .line {
     position: absolute;
     width: 3.2rem;
     height: 0.2rem;
-    right: 0;
     background: $black;
+    z-index: 1000;
 }
 
 .hamburger_btn .line_01 {
-    top: 2rem;
+    top: 0rem;
     transition: 0.8s ease;
 }
 .hamburger_btn .line_02 {
     width: 2.4rem;
-    top: 3rem;
+    top: 1rem;
+    right: 2.8rem;
     transition: 0.8s ease;
 }
 
@@ -57,17 +60,17 @@
 }
 
 .menu {
-    position: fixed;
+    position: absolute;
     background-color: rgba(255,255,255);
-    z-index: 600;
+    z-index: -1;
     padding: 2rem;
     width: 90vw;
     height: 54rem;
     right: 0;
     top: 0;
     ul{
-        margin: 5rem 2rem 4rem;
-        padding: 0;
+        margin: 5rem 0rem 4rem;
+        padding: 2rem;
     }
     li {
         list-style: none;
@@ -84,6 +87,7 @@
 }
 
 div .menu-side-bg {
+    position: fixed;
     background-color: rgb(239,168,64, 0.7);
     width: 23rem;
     height: 54rem;

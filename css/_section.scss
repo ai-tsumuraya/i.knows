@@ -1,6 +1,7 @@
 .section-top {
     display: flex;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 .container {
@@ -8,7 +9,7 @@
 }
 
 main {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .section-title-box {
@@ -20,6 +21,10 @@ main {
 
 section {
     z-index: 100;
+}
+
+#service {
+    position: relative;
 }
 
 

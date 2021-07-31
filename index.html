@@ -9,28 +9,33 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
     <body>
-        <header class="header">
-            <a href="index.html"><img class="logo" src="./img/logo/logo_sp.png" alt="i.knows ロゴ"></a>
-            <div id="app" class="box">
-                <div class="hamburger_btn" v-on:click='activeBtnClick' >
-                  <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
-                  <span class="line line_02" v-bind:class="{'btn_line02 hamburger-line-expanded':ActiveBtn}"></span>
+        <header>
+            <div class="header">
+                <div>
+                    <div class="bg-top-header"></div>
                 </div>
-            <!--サイドメニュー-->
-                <transition name="menu">
-                  
-                  <div class="menu" v-show="ActiveBtn">
-                      <div class="menu-side-bg"></div>
-                      <ul>
-                          <li><a href="#about">About i.knows</a></li>
-                          <li><a href="#service">Service</a></li>
-                          <li><a href="#a-little-tip">A little tip</a></li>
-                          <li><a href="#applicationform">Application form</a></li>
-                          <li><a href="#contact">Contact</a></li>
-                          <li class="ig"><a href="https://www.instagram.com/"><img class="instagram-logo" src="./img/instagram.png" alt="インスタグラムアイコン"></a></li>
-                      </ul>
-                  </div>
-              </transition>
+                <a href="index.html"><img class="logo" src="./img/logo/logo_sp.png" alt="i.knows ロゴ"></a>
+            
+                <div id="app" class="box">
+                    <div class="hamburger_btn" v-on:click='activeBtnClick' >
+                      <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
+                      <span class="line line_02" v-bind:class="{'btn_line02 hamburger-line-expanded':ActiveBtn}"></span>
+                    </div>
+                <!--サイドメニュー-->
+                    <transition name="menu">
+                      <div class="menu" v-show="ActiveBtn">
+                          <div class="menu-side-bg"></div>
+                          <ul>
+                              <li><a href="#about">About i.knows</a></li>
+                              <li><a href="#service">Service</a></li>
+                              <li><a href="#a-little-tip">A little tip</a></li>
+                              <li><a href="#applicationform">Application form</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                              <li class="ig"><a href="https://www.instagram.com/"><img class="instagram-logo" src="./img/instagram.png" alt="インスタグラムアイコン"></a></li>
+                          </ul>
+                      </div>
+                  </transition>
+                </div>
             </div>
         </header>
         <main>
@@ -53,10 +58,10 @@
                 </div>
             </section>
             <section id="about">
+                <div class="section-title-box">
+                     <h2>About i.knows</h2>
+                </div>
                 <div class="container">
-                    <div class="section-title-box">
-                         <h2>About i.knows</h2>
-                    </div>
                     <div class="about-img-pc">
                         <img src="./img/about_pc.png" alt="i.knowsのアバウトのイメージ">
                     </div>
@@ -72,6 +77,63 @@
                     </div>
                 </div>
                 <div class="bubble-bg-green"></div>
+            </section>
+            <section id="service">
+                <div class="bubble-bg-orange"></div>
+                <div class="section-title-box">
+                     <h2>Service</h2>
+                </div>
+                <div class="container">
+                    <div class="service-card">
+                        <div class="service-img-box">
+                            <img class="service-img" src="./img/service/service_1.png" alt="サービス概要1：ソーシャルメディア発信">
+                        </div>
+                        <div>
+                            <p>インスタグラムを通し日本と英語圏での就職活動の違いやキャリアの築き方について実体験に基づき集めた情報を発信しています</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-box">
+                            <img class="service-img" src="./img/service/service_2.png" alt="サービス概要2：就職活動相談">
+                        </div>
+                        <div>
+                            <p>インスタグラムのメッセージやメール、ビデオ通話などあなたのスタイルにあった形で英語圏就職についてあなたの疑問にお答えします</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img-box">
+                            <img class="service-img" src="./img/service/service_3.png" alt="サービス概要3：実践的なサポート">
+                        </div>
+                        <div>
+                            <p>CVの書き方や面接での答え方を一緒に考え、自信を持って英語での自己アピールをできるようにサポートします</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubble-bg-purple"></div>
+            </section>
+            <section id="a-little-tip">
+                <div class="section-title-box">
+                     <h2>A little tip</h2>
+                </div>
+                <div class="container">
+                    <div class="tip-bg">
+                        <div class="dot-box-orange">
+                            <h3 class="tip-bold">日本の面接との違いに驚いた話</h3>
+                        </div>
+                        <div class="white-bg-tip">
+                            <p>留学先の大学でキャリアサポートに行き、初めての英語面接の前に練習をさせてもらった時、一番最初にもらったアドバイスが
+    
+                                <span class="tip-bold">「まずはリラックスして。足を組んで座ってもいいのよ。」</span>
+    
+                                日本のようにしっかりマナーを守らなければいけないという雰囲気より、自然体で自分をしっかり出せるようにするための雰囲気作りを大切にするのが英語圏での面接であることを知りました
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>インスタグラムで海外のあれやこれやを発信中！</p>
+                        <a href="https://www.instagram.com/"><button>SEE MORE</button></a>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer">

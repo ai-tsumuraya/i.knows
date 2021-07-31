@@ -3,7 +3,7 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
 }
 
 body {
@@ -30,45 +30,61 @@ h2 {
   margin: 1;
 }
 
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 6rem;
+  background-color: white;
+}
+
 .header {
+  position: fixed;
   display: flex;
-  justify-content: space-between;
-  margin: 1rem 1rem 0;
+  width: 100%;
 }
 
 .logo {
-  width: 50%;
+  position: absolute;
+  width: 25%;
   height: auto;
-  z-index: 700;
+  z-index: 1001;
+  padding: 2rem 3rem;
+}
+
+div#app {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .hamburger_btn {
   position: absolute;
   width: 6rem;
-  top: 1.5rem;
-  right: 3rem;
+  top: 3rem;
+  right: 1rem;
   height: 4rem;
   cursor: pointer;
-  text-align: center;
-  z-index: 700;
 }
 
 .line {
   position: absolute;
   width: 3.2rem;
   height: 0.2rem;
-  right: 0;
   background: #191919;
+  z-index: 1000;
 }
 
 .hamburger_btn .line_01 {
-  top: 2rem;
+  top: 0rem;
   transition: 0.8s ease;
 }
 
 .hamburger_btn .line_02 {
   width: 2.4rem;
-  top: 3rem;
+  top: 1rem;
+  right: 2.8rem;
   transition: 0.8s ease;
 }
 
@@ -97,9 +113,9 @@ h2 {
 }
 
 .menu {
-  position: fixed;
+  position: absolute;
   background-color: white;
-  z-index: 600;
+  z-index: -1;
   padding: 2rem;
   width: 90vw;
   height: 54rem;
@@ -107,8 +123,8 @@ h2 {
   top: 0;
 }
 .menu ul {
-  margin: 5rem 2rem 4rem;
-  padding: 0;
+  margin: 5rem 0rem 4rem;
+  padding: 2rem;
 }
 .menu li {
   list-style: none;
@@ -122,6 +138,7 @@ h2 {
 }
 
 div .menu-side-bg {
+  position: fixed;
   background-color: rgba(239, 168, 64, 0.7);
   width: 23rem;
   height: 54rem;
@@ -143,13 +160,23 @@ li.ig {
 }
 
 .bg-top {
-  position: absolute;
   top: 0;
   right: 0;
+  background-color: rgba(239, 168, 64, 0.7);
+  position: absolute;
   z-index: -1;
   width: 23rem;
   height: 77rem;
+}
+
+.bg-top-header {
+  position: fixed;
+  top: 0;
+  right: 0;
   background-color: rgba(239, 168, 64, 0.7);
+  width: 23rem;
+  height: 6rem;
+  z-index: 800;
 }
 
 .main-visual {
@@ -200,6 +227,7 @@ p.text-top-sub {
 .section-top {
   display: flex;
   justify-content: center;
+  margin-top: 5rem;
 }
 
 .container {
@@ -207,7 +235,7 @@ p.text-top-sub {
 }
 
 main {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .section-title-box {
@@ -221,13 +249,17 @@ section {
   z-index: 100;
 }
 
+#service {
+  position: relative;
+}
+
 div.about-img-pc {
   display: none;
 }
 
 .about-text p {
   line-height: 4;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   white-space: pre-line;
 }
 
@@ -239,14 +271,54 @@ div.about-img-pc {
 .bubble-bg-green {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 50%;
   border-radius: 50%;
   filter: blur(2vw);
   z-index: -100;
+  width: 100%;
+  height: 38%;
+  bottom: -15rem;
+  left: -18rem;
+  background: radial-gradient(50% 50%, rgba(170, 188, 75, 0.6), rgba(170, 188, 75, 0.05));
+}
+
+.bubble-bg-orange {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2vw);
+  z-index: -100;
+  width: 52%;
+  height: 9%;
+  top: 35rem;
+  left: 17rem;
+  background: radial-gradient(50% 50%, rgba(239, 168, 64, 0.6), rgba(239, 168, 64, 0.05));
+}
+
+.bubble-bg-purple {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2vw);
+  z-index: -100;
+  width: 96%;
+  height: 20%;
   bottom: -15rem;
   left: -16rem;
-  background: radial-gradient(50% 50%, rgba(170, 188, 75, 0.6), rgba(170, 188, 75, 0.05));
+  background: radial-gradient(50% 50%, rgba(156, 156, 198, 0.6), rgba(156, 156, 198, 0.05));
+}
+
+.service-card {
+  margin-bottom: 15rem;
+}
+.service-card .service-img-box {
+  padding: 2rem 5rem;
+}
+.service-card img {
+  width: 100%;
+}
+.service-card p {
+  font-size: 1.4rem;
+  line-height: 3;
 }
 
 /*# sourceMappingURL=style.css.map */
