@@ -1,0 +1,13 @@
+.bubble-bg-green {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -10;
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    filter: blur(2vw);
+    z-index: -100;
+    background: radial-gradient(50% 50%, rgba(170,188,75,.6), rgba(170,188,75,.05));
+    animation: fadeIn ease 2s;
+}

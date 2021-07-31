@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>i.knows</title>
+        <meta name="description" content="英語圏で就職を目指す方の相談サポートをするサービスを提供するウェブサイトです。">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img class="logo" src="./img/logo/logo_sp.png" alt="i.knows ロゴ"></a>
+            <div id="app" class="box">
+                <div class="hamburger_btn" v-on:click='activeBtnClick' >
+                  <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
+                  <span class="line line_02" v-bind:class="{'btn_line02 hamburger-line-expanded':ActiveBtn}"></span>
+                </div>
+            <!--サイドメニュー-->
+                <transition name="menu">
+                  
+                  <div class="menu" v-show="ActiveBtn">
+                      <div class="menu-side-bg"></div>
+                      <ul>
+                          <li><a href="#about">About i.knows</a></li>
+                          <li><a href="#service">Service</a></li>
+                          <li><a href="#a-little-tip">A little tip</a></li>
+                          <li><a href="#applicationform">Application form</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                          <li class="ig"><a href="https://www.instagram.com/"><img class="instagram-logo" src="./img/instagram.png" alt="インスタグラムアイコン"></a></li>
+                      </ul>
+                  </div>
+              </transition>
+            </div>
+        </header>
+        <main>
+            <section class="section-top">
+                <div class="bg-top"></div>
+                <div class="container">
+                    <div class="parent-box-top">
+                        <div class="top-box-img">
+                            <img class="main-visual" src="./img/top.png" alt="メインビジュアル：就職斡旋会社イラスト">
+                        </div>
+                        <div class="top-text-box">
+                            <h1 class="text-top">英語圏で
+                            オフィス職を
+                            目指す</h1>
+                            <p class="text-top-sub">実体験をもとにあなたの海外へ
+                            の挑戦をサポートする</p>
+                        </div>
+                        <div class="dots-box-decoration"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="container">
+                    <div class="section-title-box">
+                         <h2>About i.knows</h2>
+                    </div>
+                    <div class="about-img-pc">
+                        <img src="./img/about_pc.png" alt="i.knowsのアバウトのイメージ">
+                    </div>
+                    <div class="about-text">
+                        <p>「 i.knows 」は、英語圏でオフィス職を目指す方の相談やサポートをするために始まりました
+
+                            英語圏での履歴書(CV)の書き方や面接について知っておくとためになることなど、私の実体験やリサーチをシェアし、少しでも多くの方が自信を持って英語での就職活動に臨めるようサポートさせていただきます
+                            
+                            「英語面接ってどんな感じなんだろう？」という  “ちょっと気になる” 質問ができる、そんな帰り
+                            道にふらっと気軽に立ち寄れるカフェのような
+                            サービスを目指しています
+                        </p>
+                    </div>
+                    <template>
+                        
+                        <!--<div class="bubble-bg-green" v-bind:class="{fadeIn: visible} ">-->
+                        <!--    <slot v-show="visible"></slot>-->
+                        <!--</div>-->
+                    </template>
+                </div>
+               
+               
+            </section>
+            
+        </main>
+        <footer class="footer">
+            
+        </footer>
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/fade_in.js"></script>
+    </body>
+</html>

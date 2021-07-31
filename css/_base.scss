@@ -1,0 +1,50 @@
+$orange: #EFA840; // rgb(239,168,64)
+$black: #191919;
+$green: #AABC4B; //rgb(170,188,75)
+$purple: #9C9CC6; //rgb(156,156,198)
+
+$breakpoints: (
+  'sm': 'screen and (min-width: 375px)',
+  'md': 'screen and (min-width: 500px)',
+  'lg': 'screen and (min-width: 900px)',
+) !default;
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// ベーススタイル
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2rem;
+}
+
+body {
+    font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.5rem;
+        weight: 300;
+        }
+    margin: 0;
+    line-height: 1.75;
+    color: $black;
+    background-color: white;
+}
+
+a {
+    color: $purple;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+h2 {
+    margin: 1;
+}
+

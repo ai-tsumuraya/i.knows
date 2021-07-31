@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Nanum+Myeongjo:wght@700&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.75;
+  color: #191919;
+  background-color: white;
+}
+
+a {
+  color: #9C9CC6;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+h2 {
+  margin: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 0;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+  z-index: 700;
+}
+
+.hamburger_btn {
+  position: fixed;
+  width: 7rem;
+  top: 0;
+  right: 0;
+  height: 2rem;
+  cursor: pointer;
+  text-align: center;
+  z-index: 700;
+}
+
+.line {
+  position: fixed;
+  width: 3.2rem;
+  height: 0.2rem;
+  background: #191919;
+}
+
+.hamburger_btn .line_01 {
+  top: 2rem;
+  transition: 0.8s ease;
+}
+
+.hamburger_btn .line_02 {
+  width: 2.4rem;
+  top: 3rem;
+  transition: 0.8s ease;
+}
+
+.btn_line01 {
+  transform: translateY(0px) rotate(-45deg);
+  transition: 0.8s ease;
+}
+
+.btn_line02 {
+  transform: translateY(-10px) rotate(45deg);
+  transition: 0.8s ease;
+}
+
+.hamburger_btn span.hamburger-line-expanded {
+  color: red;
+  width: 3.2rem;
+}
+
+.menu-enter-active, .menu-leave-active {
+  transform: translate(0px, 0px);
+  transition: transform 450ms cubic-bezier(0, 0, 0.2, 1) 50ms;
+}
+
+.menu-enter, .menu-leave-to {
+  transform: translateY(-100vh) translateY(0px);
+}
+
+.menu {
+  position: fixed;
+  background-color: white;
+  z-index: 600;
+  padding: 2rem;
+  width: 90vw;
+  height: 54rem;
+  right: 0;
+  top: 0;
+}
+.menu ul {
+  margin: 5rem 2rem 4rem;
+  padding: 0;
+}
+.menu li {
+  list-style: none;
+  line-height: 2.5;
+}
+.menu a {
+  color: #191919;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+div .menu-side-bg {
+  background-color: rgba(239, 168, 64, 0.7);
+  width: 23rem;
+  height: 54rem;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.instagram-logo {
+  width: 4rem;
+  height: auto;
+}
+
+li.ig {
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.bg-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 23rem;
+  height: 77rem;
+  background-color: rgba(239, 168, 64, 0.7);
+}
+
+.main-visual {
+  width: 30rem;
+  height: auto;
+  z-index: 5;
+}
+
+div.parent-box-top {
+  position: relative;
+}
+
+.text-top {
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.9);
+  z-index: 500;
+  width: 16.5rem;
+  margin: 0;
+  padding: 1rem;
+  bottom: -6rem;
+  right: 1rem;
+  white-space: pre-line;
+  font-family: "Nanum Myeongjo", serif;
+  line-height: 1.5;
+  font-size: 2.8rem;
+}
+
+.dots-box-decoration {
+  position: absolute;
+  bottom: -9rem;
+  right: 15.5rem;
+  border: dashed 0.2rem #AABC4B;
+  width: 8rem;
+  height: 8rem;
+  z-index: 550;
+}
+
+p.text-top-sub {
+  position: absolute;
+  bottom: -12.5rem;
+  right: 0.5rem;
+  font-size: 1.2rem;
+  width: 17.5rem;
+  white-space: pre-line;
+  z-index: 551;
+}
+
+.section-top {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.section-title-box {
+  margin-top: 20rem;
+}
+.section-title-box h2 {
+  margin-top: 10rem;
+}
+
+section {
+  z-index: 100;
+}
+
+div.about-img-pc {
+  display: none;
+}
+
+.about-text p {
+  line-height: 4;
+  font-size: 1.2rem;
+  white-space: pre-line;
+}
+
+#about {
+  position: relative;
+  display: block;
+}
+
+.bubble-bg-green {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10;
+  width: 100%;
+  height: 50%;
+  border-radius: 50%;
+  filter: blur(2vw);
+  z-index: -100;
+  background: radial-gradient(50% 50%, rgba(170, 188, 75, 0.6), rgba(170, 188, 75, 0.05));
+  animation: fadeIn ease 2s;
+}
+
+/*# sourceMappingURL=style.css.map */

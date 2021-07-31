@@ -1,0 +1,104 @@
+.hamburger_btn {
+    position: fixed;
+    width: 7rem;
+    top: 0;
+    right: 0;
+    height: 2rem;
+    cursor: pointer;
+    text-align: center;
+    z-index: 700;
+}
+
+.hamburger_btn {
+    // position: fixed;
+}
+.line {
+    position: fixed;
+    width: 3.2rem;
+    height: 0.2rem;
+    background: $black;
+}
+
+.hamburger_btn .line_01 {
+    top: 2rem;
+    transition: 0.8s ease;
+}
+.hamburger_btn .line_02 {
+    width: 2.4rem;
+    top: 3rem;
+    transition: 0.8s ease;
+}
+
+
+.btn_line01 {
+    transform: translateY(0px) rotate(-45deg);
+    transition: 0.8s ease;
+}
+.btn_line02 {
+    transform: translateY(-10px) rotate(45deg);
+    transition: 0.8s ease;
+}
+
+.hamburger_btn span.hamburger-line-expanded{
+    color: red;
+    width: 3.2rem;
+}
+
+
+// サイドメニュー
+
+.menu-enter-active, .menu-leave-active {
+    transform: translate(0px, 0px); 
+    transition: transform 450ms cubic-bezier(0, 0, 0.2, 1) 50ms;
+}
+.menu-enter, .menu-leave-to {
+    transform: translateY(-100vh) translateY(0px);
+}
+
+.menu {
+    position: fixed;
+    background-color: rgba(255,255,255);
+    z-index: 600;
+    padding: 2rem;
+    width: 90vw;
+    height: 54rem;
+    right: 0;
+    top: 0;
+    ul{
+        margin: 5rem 2rem 4rem;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        line-height: 2.5;
+    }
+    a {
+        color: $black;
+        text-decoration: none;
+        font: {
+            size: 3rem;
+            weight: 500;
+        }
+    }
+}
+
+div .menu-side-bg {
+    background-color: rgb(239,168,64, 0.7);
+    width: 23rem;
+    height: 54rem;
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.instagram-logo {
+    width: 4rem;
+    height: auto;
+}
+
+li.ig {
+    line-height: 1.5;
+    margin-top: 1rem;
+}
