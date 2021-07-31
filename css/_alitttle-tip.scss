@@ -1,0 +1,42 @@
+// #a-little-tip {
+//     overflow: hidden;
+// }
+.tip-bg {
+    background-color: rgb(170,188,75, 0.6);
+    width: calc(96.5%);
+    // padding: 0 -1rem;
+    padding: 2rem 0rem 1rem 4rem;
+    .section-title-box {
+        margin-top: 2rem;
+    }
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.white-bg-tip {
+    background-color: rgba(250,250,250, 0.5);
+    p {
+        padding: 2rem;
+        white-space: pre-line;
+        font-size: 1.4rem;
+        line-height: 3rem;
+    }
+}
+
+.tip-bold {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.dot-box-orange {
+    width: 12rem;
+    height: 14rem;
+    padding: 1rem;
+    border: dashed 0.2rem $orange;
+    h3 {
+        font-size: 2rem;
+        white-space: pre-line;
+        margin: 0;
+    }
+}
+
