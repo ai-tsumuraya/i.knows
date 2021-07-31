@@ -321,9 +321,15 @@ div.about-img-pc {
   line-height: 3;
 }
 
+#a-little-tip {
+  margin-top: 25rem;
+}
+
 .tip-bg {
+  position: relative;
   background-color: rgba(170, 188, 75, 0.6);
   width: calc(96.5%);
+  height: 65rem;
   padding: 2rem 0rem 1rem 4rem;
 }
 .tip-bg .section-title-box {
@@ -335,9 +341,13 @@ div.about-img-pc {
 
 .white-bg-tip {
   background-color: rgba(250, 250, 250, 0.5);
+  z-index: 0;
+  position: absolute;
+  top: 20rem;
+  left: 2rem;
 }
 .white-bg-tip p {
-  padding: 2rem;
+  padding: 5rem 2rem 2rem;
   white-space: pre-line;
   font-size: 1.4rem;
   line-height: 3rem;
@@ -345,18 +355,48 @@ div.about-img-pc {
 
 .tip-bold {
   font-family: "Nanum Myeongjo", serif;
+  font-size: 1.6rem;
 }
 
 .dot-box-orange {
-  width: 12rem;
-  height: 14rem;
+  z-index: 1;
+  width: 5rem;
+  height: 5rem;
   padding: 1rem;
   border: dashed 0.2rem #EFA840;
 }
-.dot-box-orange h3 {
+
+div h3.tip-bold {
+  position: absolute;
+  top: 13rem;
+  left: 7rem;
+  z-index: 3;
   font-size: 2rem;
   white-space: pre-line;
   margin: 0;
+}
+
+.insta-wayout {
+  font-size: 1.4rem;
+  text-align: end;
+}
+
+.btn-seemore {
+  background-color: rgba(170, 188, 75, 0.2);
+  color: #AABC4B;
+  font-weight: 500;
+  width: 12rem;
+  height: 5rem;
+  border: rgba(170, 188, 75, 0.2) 0.2rem solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
