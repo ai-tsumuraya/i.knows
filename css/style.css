@@ -43,20 +43,21 @@ h2 {
 }
 
 .hamburger_btn {
-  position: fixed;
-  width: 7rem;
-  top: 0;
-  right: 0;
-  height: 2rem;
+  position: absolute;
+  width: 6rem;
+  top: 1.5rem;
+  right: 3rem;
+  height: 4rem;
   cursor: pointer;
   text-align: center;
   z-index: 700;
 }
 
 .line {
-  position: fixed;
+  position: absolute;
   width: 3.2rem;
   height: 0.2rem;
+  right: 0;
   background: #191919;
 }
 
@@ -238,15 +239,14 @@ div.about-img-pc {
 .bubble-bg-green {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: -10;
   width: 100%;
   height: 50%;
   border-radius: 50%;
   filter: blur(2vw);
   z-index: -100;
+  bottom: -15rem;
+  left: -16rem;
   background: radial-gradient(50% 50%, rgba(170, 188, 75, 0.6), rgba(170, 188, 75, 0.05));
-  animation: fadeIn ease 2s;
 }
 
 /*# sourceMappingURL=style.css.map */
