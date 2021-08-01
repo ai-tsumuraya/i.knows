@@ -437,18 +437,16 @@ select:invalid {
 }
 
 .submit-btn {
+  border: #fafafa 0.2rem solid;
+  background-color: rgba(250, 250, 250, 0.2);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
   display: inline-block;
   justify-content: end;
   height: 5rem;
   width: 10rem;
-  border: #fafafa 0.2rem solid;
-  background-color: rgba(250, 250, 250, 0.2);
-  color: white;
-}
-.submit-btn font {
-  family: "Montserrat", sans-serif;
-  size: 1.4rem;
-  weight: 500;
 }
 
 .appform-text {
@@ -458,7 +456,7 @@ select:invalid {
 }
 
 .bold {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .asterisk {
@@ -468,6 +466,74 @@ select:invalid {
 a.details-link {
   color: #9C9CC6;
   border-bottom: #9C9CC6 solid 0.2rem;
+}
+
+a .btn-contact {
+  border: #fafafa 0.2rem solid;
+  background-color: rgba(250, 250, 250, 0.2);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  white-space: pre-line;
+  height: 7rem;
+  width: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+#contact .container {
+  background-color: #9C9CC6;
+  margin: 20rem 0 0 -4rem;
+  height: auto;
+  padding: 4rem;
+  color: white;
+}
+#contact .container .section-title-box {
+  margin-top: 0;
+}
+
+#contact {
+  margin: 0;
+}
+#contact h2 {
+  margin: 0;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 3rem;
+  align-items: center;
+}
+
+.footer-insta-logo {
+  width: 3rem;
+  height: auto;
+  margin: 3rem;
+}
+
+.footer-logo {
+  width: 40%;
+  height: auto;
+  margin: 1rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.copyright small {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

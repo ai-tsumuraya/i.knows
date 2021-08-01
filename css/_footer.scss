@@ -1,0 +1,27 @@
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 3rem;
+    align-items: center;
+}
+
+.footer-insta-logo {
+    width: 3rem;
+    height: auto;
+    margin: 3rem;
+}
+
+.footer-logo {
+    width: 40%;
+    height: auto;
+    margin: 1rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    small {
+        font-size: 1.2rem;
+    }
+}
