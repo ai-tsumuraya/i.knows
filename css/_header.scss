@@ -4,6 +4,10 @@ header {
     width: 100vw;
     height: 6rem;
     background-color: white;
+    @include mq(xl) {
+        height: 10rem;
+        display: flex;
+    }
 }
 .header {
     position: fixed;
@@ -17,6 +21,45 @@ header {
     height: auto;
     z-index: 1001;
     padding: 2rem 3rem;
+    @include mq(md) {
+        width: 20%;
+    }
+    @include mq(lg) {
+        width: 10%;
+    }
+    @include mq(xl) {
+        padding: 3rem 9rem;
+    }
 }
 
+.nav-pc {
+    display: none;
+}
 
+nav { 
+    @include mq(xl) {
+        z-index: 1001;
+        .nav-pc {
+            margin: 0 11rem 0 0;
+            display: flex;
+            li {
+                margin: 3rem 2rem;
+                font: {
+                    weight: 500;
+                    size: 2rem;
+                }
+                a {
+                    color: $black;
+                }
+                }
+            }
+    }
+}
+
+.header-block-pc {
+    @include mq(xl) {
+        justify-content: space-between;
+        display: flex;
+        width: 100vw;
+    }
+}

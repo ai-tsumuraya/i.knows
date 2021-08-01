@@ -7,6 +7,7 @@ $breakpoints: (
   'sm': 'screen and (min-width: 375px)',
   'md': 'screen and (min-width: 500px)',
   'lg': 'screen and (min-width: 900px)',
+  'xl': 'screen and (min-width: 1366px)',
 ) !default;
 @mixin mq($breakpoint: md) {
   @media #{map-get($breakpoints, $breakpoint)} {
@@ -26,13 +27,16 @@ html {
 body {
     font: {
         family: 'Montserrat', sans-serif;
-        size: 1.5rem;
+        size: 1.4rem;
         weight: 300;
         }
     margin: 0;
     line-height: 1.75;
     color: $black;
     background-color: white;
+    @include mq(xl) {
+        font-size: 1.8rem; // フォントサイズは16px
+    }
 }
 
 a {
@@ -52,4 +56,3 @@ h2 {
 li {
     list-style: none;
 }
-

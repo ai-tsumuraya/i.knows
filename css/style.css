@@ -8,12 +8,17 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 300;
   margin: 0;
   line-height: 1.75;
   color: #191919;
   background-color: white;
+}
+@media screen and (min-width: 1366px) {
+  body {
+    font-size: 1.8rem;
+  }
 }
 
 a {
@@ -41,6 +46,12 @@ header {
   height: 6rem;
   background-color: white;
 }
+@media screen and (min-width: 1366px) {
+  header {
+    height: 10rem;
+    display: flex;
+  }
+}
 
 .header {
   position: fixed;
@@ -54,6 +65,51 @@ header {
   height: auto;
   z-index: 1001;
   padding: 2rem 3rem;
+}
+@media screen and (min-width: 500px) {
+  .logo {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .logo {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .logo {
+    padding: 3rem 9rem;
+  }
+}
+
+.nav-pc {
+  display: none;
+}
+
+@media screen and (min-width: 1366px) {
+  nav {
+    z-index: 1001;
+  }
+  nav .nav-pc {
+    margin: 0 11rem 0 0;
+    display: flex;
+  }
+  nav .nav-pc li {
+    margin: 3rem 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  nav .nav-pc li a {
+    color: #191919;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .header-block-pc {
+    justify-content: space-between;
+    display: flex;
+    width: 100vw;
+  }
 }
 
 div#app {
@@ -70,6 +126,11 @@ div#app {
   right: 1rem;
   height: 4rem;
   cursor: pointer;
+}
+@media screen and (min-width: 1366px) {
+  .hamburger_btn {
+    display: none;
+  }
 }
 
 .line {
@@ -172,6 +233,12 @@ li.ig {
   width: 23rem;
   height: 77rem;
 }
+@media screen and (min-width: 1366px) {
+  .bg-top {
+    width: 60%;
+    height: 120vh;
+  }
+}
 
 .bg-top-header {
   position: fixed;
@@ -182,11 +249,27 @@ li.ig {
   height: 6rem;
   z-index: 800;
 }
+@media screen and (min-width: 1366px) {
+  .bg-top-header {
+    width: 60%;
+    height: 10rem;
+  }
+}
 
 .main-visual {
   width: 30rem;
   height: auto;
   z-index: 5;
+}
+@media screen and (min-width: 500px) {
+  .main-visual {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .main-visual {
+    width: 100%;
+  }
 }
 
 div.parent-box-top {
@@ -196,7 +279,6 @@ div.parent-box-top {
 .text-top {
   position: absolute;
   background-color: rgba(250, 250, 250, 0.9);
-  z-index: 500;
   width: 16.5rem;
   margin: 0;
   padding: 1rem;
@@ -206,6 +288,36 @@ div.parent-box-top {
   font-family: "Nanum Myeongjo", serif;
   line-height: 1.5;
   font-size: 2.8rem;
+}
+@media screen and (min-width: 500px) {
+  .text-top {
+    width: 27%;
+    height: 27%;
+    padding: 2rem;
+    bottom: 0rem;
+    right: 4.5rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .text-top {
+    width: 24%;
+    height: 25%;
+    padding: 2rem;
+    bottom: 5rem;
+    right: 4.5rem;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .text-top {
+    width: 35%;
+    height: 32%;
+    padding: 3rem;
+    bottom: 30rem;
+    right: -24rem;
+    font-size: 5.5rem;
+  }
 }
 
 .dots-box-decoration {
@@ -217,6 +329,26 @@ div.parent-box-top {
   height: 8rem;
   z-index: 550;
 }
+@media screen and (min-width: 500px) {
+  .dots-box-decoration {
+    bottom: -4rem;
+    right: 16.4rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .dots-box-decoration {
+    bottom: 2rem;
+    right: 19rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .dots-box-decoration {
+    bottom: 25rem;
+    right: 6rem;
+    width: 14rem;
+    height: 14rem;
+  }
+}
 
 p.text-top-sub {
   position: absolute;
@@ -227,15 +359,55 @@ p.text-top-sub {
   white-space: pre-line;
   z-index: 551;
 }
+@media screen and (min-width: 500px) {
+  p.text-top-sub {
+    bottom: -7rem;
+    right: 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  p.text-top-sub {
+    bottom: -1rem;
+    right: 3rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  p.text-top-sub {
+    bottom: 16.5rem;
+    right: -15.5rem;
+    font-size: 1.8rem;
+    width: 26rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .top-box-img {
+    margin: 5rem 15rem;
+  }
+}
 
 .section-top {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
 }
+@media screen and (min-width: 1366px) {
+  .section-top {
+    justify-content: flex-start;
+  }
+}
 
 .container {
   margin-top: 2rem;
+}
+@media screen and (min-width: 1366px) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 4rem;
+  }
 }
 
 main {
@@ -244,9 +416,17 @@ main {
 
 .section-title-box {
   margin-top: 20rem;
+  padding-top: 5rem;
+  margin-top: -5rem;
 }
 .section-title-box h2 {
   margin-top: 10rem;
+}
+@media screen and (min-width: 1366px) {
+  .section-title-box h2 {
+    margin: 6rem;
+    font-size: 2.6rem;
+  }
 }
 
 section {
@@ -257,14 +437,55 @@ section {
   position: relative;
 }
 
+#applicationform {
+  position: relative;
+}
+
+@media screen and (min-width: 1366px) {
+  .pc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .pc-appform-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  #service .container {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 4rem;
+  }
+}
+
 div.about-img-pc {
   display: none;
+}
+@media screen and (min-width: 1366px) {
+  div.about-img-pc {
+    display: block;
+    width: 100%;
+    margin: 8rem;
+  }
 }
 
 .about-text p {
   line-height: 4;
-  font-size: 1.4rem;
   white-space: pre-line;
+}
+@media screen and (min-width: 1366px) {
+  .about-text p {
+    line-height: 3;
+    margin: 8rem;
+  }
 }
 
 #about {
@@ -276,43 +497,98 @@ div.about-img-pc {
   content: "";
   position: absolute;
   border-radius: 50%;
-  filter: blur(2vw);
+  filter: blur(5vw);
   z-index: -100;
   width: 100%;
   height: 38%;
   bottom: -15rem;
   left: -18rem;
-  background: radial-gradient(50% 50%, rgba(170, 188, 75, 0.6), rgba(170, 188, 75, 0.05));
+  background: radial-gradient(70% 100%, rgba(170, 188, 75, 0.6), rgba(170, 188, 75, 0.05));
+}
+@media screen and (min-width: 1366px) {
+  .bubble-bg-green {
+    filter: blur(2vw);
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .bubble-bg-orange {
   content: "";
   position: absolute;
   border-radius: 50%;
-  filter: blur(2vw);
+  filter: blur(5vw);
   z-index: -100;
   width: 52%;
   height: 9%;
   top: 35rem;
   left: 17rem;
-  background: radial-gradient(50% 50%, rgba(239, 168, 64, 0.6), rgba(239, 168, 64, 0.05));
+  background: radial-gradient(70% 100%, rgba(239, 168, 64, 0.6), rgba(239, 168, 64, 0.05));
+}
+@media screen and (min-width: 1366px) {
+  .bubble-bg-orange {
+    filter: blur(2vw);
+    width: 40%;
+    height: 50%;
+    top: 57rem;
+    left: 80rem;
+  }
 }
 
 .bubble-bg-purple {
   content: "";
   position: absolute;
   border-radius: 50%;
-  filter: blur(2vw);
+  filter: blur(5vw);
   z-index: -100;
   width: 96%;
   height: 20%;
   bottom: -15rem;
   left: -16rem;
-  background: radial-gradient(50% 50%, rgba(156, 156, 198, 0.6), rgba(156, 156, 198, 0.05));
+  background: radial-gradient(70% 100%, rgba(156, 156, 198, 0.6), rgba(156, 156, 198, 0.05));
+}
+@media screen and (min-width: 1366px) {
+  .bubble-bg-purple {
+    filter: blur(2vw);
+    width: 50%;
+    height: 65%;
+    bottom: -160rem;
+    left: -30rem;
+  }
+}
+
+.bubble-bg-orange-2 {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(5vw);
+  z-index: -100;
+  width: 96%;
+  height: 35%;
+  top: -12rem;
+  left: -14rem;
+  background: radial-gradient(70% 100%, rgba(239, 168, 64, 0.6), rgba(239, 168, 64, 0.05));
+}
+@media screen and (min-width: 1366px) {
+  .bubble-bg-orange-2 {
+    display: none;
+  }
 }
 
 .service-card {
   margin-bottom: 15rem;
+}
+@media screen and (min-width: 900px) {
+  .service-card {
+    margin: 5rem 10rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .service-card {
+    width: calc(33.33% - 4rem);
+    margin: 0rem;
+    margin-bottom: 10rem;
+  }
 }
 .service-card .service-img-box {
   padding: 2rem 5rem;
@@ -321,7 +597,6 @@ div.about-img-pc {
   width: 100%;
 }
 .service-card p {
-  font-size: 1.4rem;
   line-height: 3;
 }
 
@@ -336,11 +611,19 @@ div.about-img-pc {
   height: 65rem;
   padding: 2rem 0rem 1rem 4rem;
 }
+@media screen and (min-width: 900px) {
+  .tip-bg {
+    height: 50rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .tip-bg {
+    height: 65rem;
+    margin-right: 9rem;
+  }
+}
 .tip-bg .section-title-box {
   margin-top: 2rem;
-}
-.tip-bg h2 {
-  margin-top: 0;
 }
 
 .white-bg-tip {
@@ -350,16 +633,39 @@ div.about-img-pc {
   top: 20rem;
   left: 2rem;
 }
+@media screen and (min-width: 1366px) {
+  .white-bg-tip {
+    margin-left: 42rem;
+    width: 79rem;
+    height: 42rem;
+    top: 35;
+  }
+}
 .white-bg-tip p {
   padding: 5rem 2rem 2rem;
   white-space: pre-line;
-  font-size: 1.4rem;
   line-height: 3rem;
+}
+@media screen and (min-width: 900px) {
+  .white-bg-tip p {
+    padding: 5rem 6rem 2rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .white-bg-tip p {
+    padding: 0rem 2rem 2rem;
+    line-height: 5rem;
+  }
 }
 
 .tip-bold {
   font-family: "Nanum Myeongjo", serif;
   font-size: 1.6rem;
+}
+@media screen and (min-width: 1366px) {
+  .tip-bold {
+    font-size: 2rem;
+  }
 }
 
 .dot-box-orange {
@@ -368,6 +674,15 @@ div.about-img-pc {
   height: 5rem;
   padding: 1rem;
   border: dashed 0.2rem #EFA840;
+}
+@media screen and (min-width: 1366px) {
+  .dot-box-orange {
+    position: absolute;
+    left: 35rem;
+    top: 14rem;
+    width: 10rem;
+    height: 11rem;
+  }
 }
 
 div h3.tip-bold {
@@ -379,9 +694,21 @@ div h3.tip-bold {
   white-space: pre-line;
   margin: 0;
 }
+@media screen and (min-width: 500px) {
+  div h3.tip-bold {
+    top: 13rem;
+    left: 7rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  div h3.tip-bold {
+    top: 20rem;
+    left: 20rem;
+    font-size: 4rem;
+  }
+}
 
 .insta-wayout {
-  font-size: 1.4rem;
   text-align: end;
 }
 
@@ -396,12 +723,38 @@ div h3.tip-bold {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (min-width: 1366px) {
+  .btn-seemore {
+    width: 18rem;
+    height: 10rem;
+  }
+}
 
 div.box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-top: 3rem;
+}
+@media screen and (min-width: 1366px) {
+  div.box {
+    margin: 3rem 9rem 0rem 0rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .tip-bg h2 {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  div.title-tip {
+    padding-top: 0;
+  }
+  div.title-tip h2 {
+    margin-top: 0;
+  }
 }
 
 form {
@@ -412,12 +765,25 @@ form ul {
   margin: 2rem 0rem 0rem;
   padding: 0;
 }
+@media screen and (min-width: 900px) {
+  form ul {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 0;
+    justify-content: space-between;
+  }
+}
 
 .form-box {
   border: white 0.2rem solid;
   height: 3rem;
   width: 24.6rem;
   border-radius: 0.2rem;
+}
+@media screen and (min-width: 500px) {
+  .form-box {
+    width: 37rem;
+  }
 }
 
 ::placeholder {
@@ -441,18 +807,30 @@ select:invalid {
   background-color: rgba(250, 250, 250, 0.2);
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
   font-weight: bold;
   display: inline-block;
   justify-content: end;
   height: 5rem;
   width: 10rem;
 }
+@media screen and (min-width: 1366px) {
+  .submit-btn {
+    height: 10rem;
+    width: 18rem;
+    font-size: 1.8rem;
+  }
+}
 
 .appform-text {
   font-size: 1.2rem;
   white-space: pre-line;
   line-height: 3rem;
+}
+@media screen and (min-width: 1366px) {
+  .appform-text {
+    margin: 2rem 3rem;
+    font-size: 1.6rem;
+  }
 }
 
 .bold {
@@ -468,12 +846,33 @@ a.details-link {
   border-bottom: #9C9CC6 solid 0.2rem;
 }
 
+@media screen and (min-width: 1366px) {
+  form {
+    width: 82vw;
+  }
+  form ul {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    margin: 5rem;
+  }
+}
+
+#applicatiopnform h2 {
+  margin: 2rem 6rem;
+}
+
+.service-opt {
+  margin-right: 1rem;
+}
+
 a .btn-contact {
   border: #fafafa 0.2rem solid;
   background-color: rgba(250, 250, 250, 0.2);
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
   font-weight: bold;
   white-space: pre-line;
   height: 7rem;
@@ -482,6 +881,24 @@ a .btn-contact {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+}
+@media screen and (min-width: 500px) {
+  a .btn-contact {
+    width: 19rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  a .btn-contact {
+    width: 38rem;
+    height: 12rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  a .btn-contact {
+    margin: 3rem;
+    height: 10rem;
+    width: 30rem;
+  }
 }
 
 #contact .container {
@@ -494,18 +911,57 @@ a .btn-contact {
 #contact .container .section-title-box {
   margin-top: 0;
 }
+@media screen and (min-width: 1366px) {
+  #contact .container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 55vw;
+  }
+  #contact .container h2 {
+    margin: 2rem;
+  }
+}
 
 #contact {
   margin: 0;
 }
 #contact h2 {
-  margin: 0;
+  margin: 0 2rem;
+}
+@media screen and (min-width: 500px) {
+  #contact h2 {
+    margin: 0rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  #contact h2 {
+    margin: 0 2rem;
+  }
+}
+#contact p {
+  margin: 0 2rem;
+}
+@media screen and (min-width: 500px) {
+  #contact p {
+    margin: 3rem 0rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  #contact p {
+    margin: 0 2rem;
+  }
 }
 
 .contact-box {
   display: flex;
   justify-content: space-between;
   text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .no-padding {
+    padding-top: 0;
+  }
 }
 
 .footer-main {
@@ -520,11 +976,21 @@ a .btn-contact {
   height: auto;
   margin: 3rem;
 }
+@media screen and (min-width: 1366px) {
+  .footer-insta-logo {
+    width: 5rem;
+  }
+}
 
 .footer-logo {
   width: 40%;
   height: auto;
   margin: 1rem;
+}
+@media screen and (min-width: 500px) {
+  .footer-logo {
+    width: 30%;
+  }
 }
 
 .copyright {

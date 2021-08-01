@@ -2,10 +2,20 @@
     display: flex;
     justify-content: center;
     margin-top: 5rem;
+    @include mq(xl) {
+        justify-content: flex-start;
+    }
 }
 
 .container {
     margin-top: 2rem;
+    @include mq(xl) {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1rem 4rem;
+    }
 }
 
 main {
@@ -14,8 +24,14 @@ main {
 
 .section-title-box {
     margin-top: 20rem;
+    padding-top: 5rem;
+    margin-top: -5rem;
     h2 {
         margin-top: 10rem;
+        @include mq(xl) { 
+            margin: 6rem;
+            font-size: 2.6rem;
+        }
     }
 }
 
@@ -26,5 +42,32 @@ section {
 #service {
     position: relative;
 }
+#applicationform {
+    position: relative;
+}
 
 
+.pc-container {
+    @include mq(xl) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.pc-appform-container {
+    @include mq(xl) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#service .container {
+    @include mq(xl) {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1rem 4rem;
+    }
+}

@@ -2,7 +2,7 @@
     content: "";
     position: absolute;
     border-radius: 50%;
-    filter: blur(2vw);
+    filter: blur(5vw);
     z-index: -100;
 }
 
@@ -13,7 +13,13 @@
     height: 38%;
     bottom: -15rem;
     left: -18rem;
-    background: radial-gradient(50% 50%, rgba(170,188,75,.6), rgba(170,188,75,.05));
+    background: radial-gradient(70% 100%, rgba(170,188,75,.6), rgba(170,188,75,.05));
+    @include mq(xl) {
+        filter: blur(2vw);
+        width: 50%;
+        height: 50%;
+        
+    }
 }
 
 .bubble-bg-orange {
@@ -22,7 +28,14 @@
     height: 9%;
     top: 35rem;
     left: 17rem;
-    background: radial-gradient(50% 50%, rgba(239,168,64,.6), rgba(239,168,64,.05));
+    background: radial-gradient(70% 100%, rgba(239,168,64,.6), rgba(239,168,64,.05));
+    @include mq(xl) {
+        filter: blur(2vw);
+        width: 40%;
+        height: 50%;
+        top: 57rem;
+        left: 80rem;
+    }
 }
 .bubble-bg-purple {
     @include blur-bg;
@@ -30,5 +43,24 @@
     height: 20%;
     bottom: -15rem;
     left: -16rem;
-    background: radial-gradient(50% 50%, rgba(156,156,198,.6), rgba(156,156,198,.05));
+    background: radial-gradient(70% 100%, rgba(156,156,198,.6), rgba(156,156,198,.05));
+    @include mq(xl) {
+        filter: blur(2vw);
+        width: 50%;
+        height: 65%;
+        bottom: -160rem;
+        left: -30rem;
+    }
+}
+
+.bubble-bg-orange-2 {
+    @include blur-bg; 
+    width: 96%;
+    height: 35%;
+    top: -12rem;
+    left: -14rem;
+    background: radial-gradient(70% 100%, rgba(239,168,64,.6), rgba(239,168,64,.05));
+    @include mq(xl) {
+        display: none;
+    }
 }

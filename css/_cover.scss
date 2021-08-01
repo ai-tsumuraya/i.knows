@@ -12,6 +12,10 @@
     z-index: -1;
     width: 23rem;
     height: 77rem;
+    @include mq(xl) {
+    width: 60%;
+    height: 120vh;
+    }
 }
 
 .bg-top-header {
@@ -20,6 +24,10 @@
     width: 23rem;
     height: 6rem;
     z-index: 800;
+    @include mq(xl) {
+        width: 60%;
+        height: 10rem;
+    }
 }
 
 // メインビジュアル
@@ -28,16 +36,22 @@
     width: 30rem;
     height: auto;
     z-index: 5;
+    @include mq(md) {
+        width: 70%;
+    }
+    @include mq(xl) {
+        width: 100%;
+    }
 }
 
 div.parent-box-top {
     position: relative;
+    // width: 100vh;
 }
 
 .text-top {
     position: absolute;
     background-color: rgba(250,250,250,0.9);
-    z-index: 500;
     width: 16.5rem;
     margin: 0;
     padding: 1rem;
@@ -47,6 +61,30 @@ div.parent-box-top {
     font-family: 'Nanum Myeongjo', serif;
     line-height: 1.5;
     font-size: 2.8rem;
+    @include mq(md) {
+        width: 27%;
+        height: 27%;
+        padding: 2rem;
+        bottom: 0rem;
+        right: 4.5rem;
+        font-size: 2rem;
+    }
+    @include mq(lg) {
+        width: 24%;
+        height: 25%;
+        padding: 2rem;
+        bottom: 5rem;
+        right: 4.5rem;
+        font-size: 2.5rem;
+    }
+    @include mq(xl) {
+        width: 35%;
+        height: 32%;
+        padding: 3rem;
+        bottom: 30rem;
+        right: -24rem;
+        font-size: 5.5rem;
+    }
 }
 
 .dots-box-decoration {
@@ -57,6 +95,20 @@ div.parent-box-top {
     width: 8rem;
     height: 8rem;
     z-index: 550;
+    @include mq(md) {
+        bottom: -4rem;
+        right: 16.4rem;
+    }
+    @include mq(lg) {
+        bottom: 2rem;
+        right: 19rem;
+    }
+    @include mq(xl) {
+        bottom: 25rem;
+        right: 6rem;
+        width: 14rem;
+        height: 14rem;
+    }
 }
 
 p.text-top-sub {
@@ -67,4 +119,24 @@ p.text-top-sub {
     width: 17.5rem;
     white-space: pre-line;
     z-index: 551;
+    @include mq(md) {
+        bottom: -7rem;
+        right: 1rem;
+    }
+    @include mq(lg) {
+        bottom: -1rem;
+        right: 3rem;
+    }
+    @include mq(xl) {
+        bottom: 16.5rem;
+        right: -15.5rem;
+        font-size: 1.8rem;
+        width: 26rem;
+    }
+}
+
+.top-box-img {
+    @include mq(xl) {
+        margin: 5rem 15rem;
+    }
 }

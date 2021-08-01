@@ -12,6 +12,9 @@ div#app {
     right: 1rem;
     height: 4rem;
     cursor: pointer;
+    @include mq(xl) {
+        display: none;
+    }
 }
 
 .line {

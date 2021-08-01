@@ -7,6 +7,18 @@ a .btn-contact {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    @include mq(md) {
+        width: 19rem;
+    }
+    @include mq(lg) {
+        width: 38rem;
+        height: 12rem;
+    }
+    @include mq(xl) {
+        margin: 3rem;
+        height: 10rem;
+        width: 30rem;
+    }
 }
 
 #contact .container {
@@ -18,12 +30,36 @@ a .btn-contact {
     .section-title-box {
         margin-top: 0;
     }
+    @include mq(xl) {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 55vw;
+        h2 {
+            margin: 2rem ;
+        }
+    }
 }
 
 #contact {
     margin: 0;
+    
     h2 {
-        margin: 0;
+        margin: 0 2rem;
+        @include mq(md) {
+            margin: 0rem;
+        }
+        @include mq(xl) {
+            margin: 0 2rem;
+        }
+    }
+    p {
+        margin: 0 2rem;
+        @include mq(md) {
+            margin: 3rem 0rem;
+        }
+        @include mq(xl) {
+            margin: 0 2rem;
+        }
     }
 }
 
@@ -31,4 +67,10 @@ a .btn-contact {
     display: flex;
     justify-content: space-between;
     text-align: center;
+}
+
+.no-padding {
+    @include mq(md) {
+        padding-top: 0;
+    }
 }
