@@ -78,12 +78,12 @@ div.parent-box-top {
         font-size: 2.5rem;
     }
     @include mq(xl) {
-        width: 35%;
+        width: 47%;
         height: 32%;
         padding: 3rem;
-        bottom: 30rem;
-        right: -24rem;
-        font-size: 5.5rem;
+        bottom: 5rem;
+        right: -21rem;
+        font-size: 5rem;
     }
 }
 
@@ -104,7 +104,7 @@ div.parent-box-top {
         right: 19rem;
     }
     @include mq(xl) {
-        bottom: 25rem;
+        bottom: 2rem;
         right: 6rem;
         width: 14rem;
         height: 14rem;
@@ -128,7 +128,7 @@ p.text-top-sub {
         right: 3rem;
     }
     @include mq(xl) {
-        bottom: 16.5rem;
+        bottom: -5rem;
         right: -15.5rem;
         font-size: 1.8rem;
         width: 26rem;
@@ -137,6 +137,6 @@ p.text-top-sub {
 
 .top-box-img {
     @include mq(xl) {
-        margin: 5rem 15rem;
+        margin: 5rem 0rem;
     }
 }

@@ -10,6 +10,9 @@
     }
     .service-img-box {
         padding: 2rem 5rem;
+        @include mq(xl) {
+            padding: 0;
+        }
     }
     img {
         width: 100%;

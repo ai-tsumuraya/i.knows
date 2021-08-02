@@ -1,5 +1,10 @@
 #a-little-tip {
     margin-top: 25rem;
+    @include mq(xl) {
+        .container {
+            margin: 2rem -20rem 0rem 0rem;
+        }
+    }
 }
 .tip-bg {
     position: relative;
@@ -12,13 +17,10 @@
     }
     @include mq(xl) {
         height: 65rem;
-        margin-right: 9rem;
+        // margin-right: 9rem;
     }
-    .section-title-box {
-        margin-top: 2rem;
-    }
-    // h2 {
-    //     margin-top: 0;
+    // .section-title-box {
+    //     margin-top: 2rem;
     // }
 }
 
@@ -29,10 +31,10 @@
      top: 20rem;
      left: 2rem;
      @include mq(xl) {
-        margin-left: 42rem;
-        width: 79rem;
+        width: 78rem;
         height: 42rem;
-        top: 35;
+        top: 23rem;
+        left: 3rem;
      }
     p {
         padding: 5rem 2rem 2rem;
@@ -42,8 +44,11 @@
             padding: 5rem 6rem 2rem;
         }
         @include mq(xl) { 
-            padding: 0rem 2rem 2rem;
-            line-height: 5rem;
+            width: 73rem;
+            height: 42rem;
+            padding: 2.9rem;
+            padding-top: 10rem;
+            margin: 0;
         }
     }
 }
@@ -64,16 +69,16 @@
     border: dashed 0.2rem $orange;
     @include mq(xl) {
         position: absolute;
-        left: 35rem;
-        top: 14rem;
+        left: 18rem;
+        top: 8rem;
         width: 10rem;
-        height: 11rem;
+        height: 10rem;
     }
 }
 
 div h3.tip-bold {
     position: absolute;
-    top: 13rem;
+    top: 9rem;
     left: 7rem;
     z-index: 3;
     font-size: 2rem;
@@ -84,9 +89,9 @@ div h3.tip-bold {
         left: 7rem;
     }
     @include mq(xl) {
-        top: 20rem;
-        left: 20rem;
-        font-size: 4rem;
+        top: 11rem;
+        left: 9rem;
+        font-size: 3rem;
     }
 }
 
@@ -116,7 +121,7 @@ div.box {
     align-items: flex-end;
     margin-top: 3rem;
     @include mq(xl) {
-        margin: 3rem 9rem 0rem 0rem;
+        margin: 2rem 22rem;
     }
 }
 
@@ -129,10 +134,20 @@ div.box {
 }
 
 div.title-tip {
+    // padding: 0;
+    // margin-top: 2rem;
+    h2 {
+        margin: 0;
+    }
     @include mq(md) {
         padding-top: 0;
         h2 {
         margin-top: 0;
+        }
+    }
+    @include mq(xl) {
+        h2 {
+            margin: 6rem 0 0;
         }
     }
 }

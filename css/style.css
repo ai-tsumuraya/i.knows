@@ -15,7 +15,7 @@ body {
   color: #191919;
   background-color: white;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   body {
     font-size: 1.8rem;
   }
@@ -46,7 +46,7 @@ header {
   height: 6rem;
   background-color: white;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   header {
     height: 10rem;
     display: flex;
@@ -76,9 +76,9 @@ header {
     width: 10%;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .logo {
-    padding: 3rem 9rem;
+    padding: 3rem 0rem;
   }
 }
 
@@ -86,13 +86,15 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   nav {
     z-index: 1001;
   }
   nav .nav-pc {
-    margin: 0 11rem 0 0;
+    margin: 0;
+    padding: 0;
     display: flex;
+    align-items: center;
   }
   nav .nav-pc li {
     margin: 3rem 2rem;
@@ -104,11 +106,12 @@ header {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .header-block-pc {
     justify-content: space-between;
     display: flex;
     width: 100vw;
+    padding: 0rem 10rem;
   }
 }
 
@@ -127,7 +130,7 @@ div#app {
   height: 4rem;
   cursor: pointer;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .hamburger_btn {
     display: none;
   }
@@ -187,6 +190,11 @@ div#app {
   right: 0;
   top: -2.8rem;
 }
+@media screen and (min-width: 900px) {
+  .menu {
+    width: 95vw;
+  }
+}
 .menu ul {
   margin: 5rem 0rem 4rem;
   padding: 2rem;
@@ -233,7 +241,7 @@ li.ig {
   width: 23rem;
   height: 77rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .bg-top {
     width: 60%;
     height: 120vh;
@@ -249,7 +257,7 @@ li.ig {
   height: 6rem;
   z-index: 800;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .bg-top-header {
     width: 60%;
     height: 10rem;
@@ -266,7 +274,7 @@ li.ig {
     width: 70%;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .main-visual {
     width: 100%;
   }
@@ -309,14 +317,14 @@ div.parent-box-top {
     font-size: 2.5rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .text-top {
-    width: 35%;
+    width: 47%;
     height: 32%;
     padding: 3rem;
-    bottom: 30rem;
-    right: -24rem;
-    font-size: 5.5rem;
+    bottom: 5rem;
+    right: -21rem;
+    font-size: 5rem;
   }
 }
 
@@ -341,9 +349,9 @@ div.parent-box-top {
     right: 19rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .dots-box-decoration {
-    bottom: 25rem;
+    bottom: 2rem;
     right: 6rem;
     width: 14rem;
     height: 14rem;
@@ -371,18 +379,18 @@ p.text-top-sub {
     right: 3rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   p.text-top-sub {
-    bottom: 16.5rem;
+    bottom: -5rem;
     right: -15.5rem;
     font-size: 1.8rem;
     width: 26rem;
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .top-box-img {
-    margin: 5rem 15rem;
+    margin: 5rem 0rem;
   }
 }
 
@@ -391,7 +399,7 @@ p.text-top-sub {
   justify-content: center;
   margin-top: 5rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .section-top {
     justify-content: flex-start;
   }
@@ -400,7 +408,7 @@ p.text-top-sub {
 .container {
   margin-top: 2rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .container {
     display: flex;
     align-items: center;
@@ -413,6 +421,11 @@ p.text-top-sub {
 main {
   padding: 3rem;
 }
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 10rem 20rem;
+  }
+}
 
 .section-title-box {
   margin-top: 20rem;
@@ -422,7 +435,7 @@ main {
 .section-title-box h2 {
   margin-top: 10rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .section-title-box h2 {
     margin: 6rem;
     font-size: 2.6rem;
@@ -441,7 +454,7 @@ section {
   position: relative;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .pc-container {
     display: flex;
     flex-direction: column;
@@ -449,14 +462,14 @@ section {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .pc-appform-container {
     flex-direction: column;
     align-items: center;
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   #service .container {
     display: flex;
     align-items: baseline;
@@ -469,11 +482,11 @@ section {
 div.about-img-pc {
   display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   div.about-img-pc {
     display: block;
-    width: 100%;
-    margin: 8rem;
+    width: 150%;
+    margin-right: 2rem;
   }
 }
 
@@ -481,16 +494,20 @@ div.about-img-pc {
   line-height: 4;
   white-space: pre-line;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .about-text p {
     line-height: 3;
-    margin: 8rem;
+    margin: 0rem;
   }
 }
 
 #about {
   position: relative;
   display: block;
+}
+
+h2.space {
+  margin-top: 20rem;
 }
 
 .bubble-bg-green {
@@ -505,11 +522,12 @@ div.about-img-pc {
   left: -18rem;
   background: radial-gradient(70% 100%, rgba(170, 188, 75, 0.6), rgba(170, 188, 75, 0.05));
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .bubble-bg-green {
     filter: blur(2vw);
     width: 50%;
-    height: 50%;
+    height: 40%;
+    left: -27rem;
   }
 }
 
@@ -525,13 +543,13 @@ div.about-img-pc {
   left: 17rem;
   background: radial-gradient(70% 100%, rgba(239, 168, 64, 0.6), rgba(239, 168, 64, 0.05));
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .bubble-bg-orange {
     filter: blur(2vw);
     width: 40%;
-    height: 50%;
+    height: 40%;
     top: 57rem;
-    left: 80rem;
+    left: 67rem;
   }
 }
 
@@ -547,13 +565,13 @@ div.about-img-pc {
   left: -16rem;
   background: radial-gradient(70% 100%, rgba(156, 156, 198, 0.6), rgba(156, 156, 198, 0.05));
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .bubble-bg-purple {
     filter: blur(2vw);
     width: 50%;
-    height: 65%;
-    bottom: -160rem;
-    left: -30rem;
+    height: 50%;
+    bottom: -147rem;
+    left: -31rem;
   }
 }
 
@@ -569,7 +587,7 @@ div.about-img-pc {
   left: -14rem;
   background: radial-gradient(70% 100%, rgba(239, 168, 64, 0.6), rgba(239, 168, 64, 0.05));
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .bubble-bg-orange-2 {
     display: none;
   }
@@ -583,7 +601,7 @@ div.about-img-pc {
     margin: 5rem 10rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .service-card {
     width: calc(33.33% - 4rem);
     margin: 0rem;
@@ -592,6 +610,11 @@ div.about-img-pc {
 }
 .service-card .service-img-box {
   padding: 2rem 5rem;
+}
+@media screen and (min-width: 1200px) {
+  .service-card .service-img-box {
+    padding: 0;
+  }
 }
 .service-card img {
   width: 100%;
@@ -602,6 +625,11 @@ div.about-img-pc {
 
 #a-little-tip {
   margin-top: 25rem;
+}
+@media screen and (min-width: 1200px) {
+  #a-little-tip .container {
+    margin: 2rem -20rem 0rem 0rem;
+  }
 }
 
 .tip-bg {
@@ -616,14 +644,10 @@ div.about-img-pc {
     height: 50rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .tip-bg {
     height: 65rem;
-    margin-right: 9rem;
   }
-}
-.tip-bg .section-title-box {
-  margin-top: 2rem;
 }
 
 .white-bg-tip {
@@ -633,12 +657,12 @@ div.about-img-pc {
   top: 20rem;
   left: 2rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .white-bg-tip {
-    margin-left: 42rem;
-    width: 79rem;
+    width: 78rem;
     height: 42rem;
-    top: 35;
+    top: 23rem;
+    left: 3rem;
   }
 }
 .white-bg-tip p {
@@ -651,10 +675,13 @@ div.about-img-pc {
     padding: 5rem 6rem 2rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .white-bg-tip p {
-    padding: 0rem 2rem 2rem;
-    line-height: 5rem;
+    width: 73rem;
+    height: 42rem;
+    padding: 2.9rem;
+    padding-top: 10rem;
+    margin: 0;
   }
 }
 
@@ -662,7 +689,7 @@ div.about-img-pc {
   font-family: "Nanum Myeongjo", serif;
   font-size: 1.6rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .tip-bold {
     font-size: 2rem;
   }
@@ -675,19 +702,19 @@ div.about-img-pc {
   padding: 1rem;
   border: dashed 0.2rem #EFA840;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .dot-box-orange {
     position: absolute;
-    left: 35rem;
-    top: 14rem;
+    left: 18rem;
+    top: 8rem;
     width: 10rem;
-    height: 11rem;
+    height: 10rem;
   }
 }
 
 div h3.tip-bold {
   position: absolute;
-  top: 13rem;
+  top: 9rem;
   left: 7rem;
   z-index: 3;
   font-size: 2rem;
@@ -700,11 +727,11 @@ div h3.tip-bold {
     left: 7rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   div h3.tip-bold {
-    top: 20rem;
-    left: 20rem;
-    font-size: 4rem;
+    top: 11rem;
+    left: 9rem;
+    font-size: 3rem;
   }
 }
 
@@ -723,7 +750,7 @@ div h3.tip-bold {
   justify-content: space-around;
   align-items: center;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .btn-seemore {
     width: 18rem;
     height: 10rem;
@@ -736,24 +763,32 @@ div.box {
   align-items: flex-end;
   margin-top: 3rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   div.box {
-    margin: 3rem 9rem 0rem 0rem;
+    margin: 2rem 22rem;
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .tip-bg h2 {
     padding-left: 2rem;
   }
 }
 
+div.title-tip h2 {
+  margin: 0;
+}
 @media screen and (min-width: 500px) {
   div.title-tip {
     padding-top: 0;
   }
   div.title-tip h2 {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.title-tip h2 {
+    margin: 6rem 0 0;
   }
 }
 
@@ -813,7 +848,7 @@ select:invalid {
   height: 5rem;
   width: 10rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .submit-btn {
     height: 10rem;
     width: 18rem;
@@ -826,7 +861,7 @@ select:invalid {
   white-space: pre-line;
   line-height: 3rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .appform-text {
     margin: 2rem 3rem;
     font-size: 1.6rem;
@@ -846,17 +881,16 @@ a.details-link {
   border-bottom: #9C9CC6 solid 0.2rem;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   form {
-    width: 82vw;
+    width: 60vw;
   }
   form ul {
     display: flex;
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
-    margin: 5rem;
+    padding: 2rem 0rem;
   }
 }
 
@@ -866,6 +900,12 @@ a.details-link {
 
 .service-opt {
   margin-right: 1rem;
+}
+
+div.submit-box {
+  margin: 0;
+  justify-content: flex-end;
+  display: flex;
 }
 
 a .btn-contact {
@@ -893,11 +933,11 @@ a .btn-contact {
     height: 12rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   a .btn-contact {
-    margin: 3rem;
+    margin-right: 3rem;
     height: 10rem;
-    width: 30rem;
+    width: 38rem;
   }
 }
 
@@ -911,14 +951,16 @@ a .btn-contact {
 #contact .container .section-title-box {
   margin-top: 0;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   #contact .container {
     flex-direction: column;
+    margin: 20rem 0 0 -20rem;
     align-items: flex-start;
-    width: 55vw;
+    padding-left: 20rem;
+    width: 80vw;
   }
   #contact .container h2 {
-    margin: 2rem;
+    margin: 2rem 0rem;
   }
 }
 
@@ -926,29 +968,24 @@ a .btn-contact {
   margin: 0;
 }
 #contact h2 {
-  margin: 0 2rem;
+  margin: 0 0 2rem;
 }
 @media screen and (min-width: 500px) {
   #contact h2 {
     margin: 0rem;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   #contact h2 {
     margin: 0 2rem;
   }
 }
 #contact p {
-  margin: 0 2rem;
+  margin: 0 0 2rem;
 }
 @media screen and (min-width: 500px) {
   #contact p {
     margin: 3rem 0rem;
-  }
-}
-@media screen and (min-width: 1366px) {
-  #contact p {
-    margin: 0 2rem;
   }
 }
 
@@ -958,10 +995,8 @@ a .btn-contact {
   text-align: center;
 }
 
-@media screen and (min-width: 500px) {
-  .no-padding {
-    padding-top: 0;
-  }
+.no-padding {
+  padding-top: 0;
 }
 
 .footer-main {
@@ -976,7 +1011,7 @@ a .btn-contact {
   height: auto;
   margin: 3rem;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1200px) {
   .footer-insta-logo {
     width: 5rem;
   }

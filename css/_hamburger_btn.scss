@@ -71,6 +71,9 @@ div#app {
     height: 53.8rem;
     right: 0;
     top: -2.8rem;
+    @include mq(lg) {
+        width: 95vw;
+    }
     ul{
         margin: 5rem 0rem 4rem;
         padding: 2rem;

@@ -2,8 +2,8 @@ div.about-img-pc {
     display: none;
     @include mq(xl) {
         display: block;
-        width: 100%;
-        margin: 8rem;
+        width: 150%;
+        margin-right: 2rem;
     }
 }
 
@@ -12,11 +12,15 @@ div.about-img-pc {
     white-space: pre-line;
     @include mq(xl) {
         line-height: 3;
-        margin: 8rem;
+        margin: 0rem;
     }
 }
 
 #about {
     position: relative;
     display: block;
+}
+
+h2.space {
+    margin-top: 20rem;
 }

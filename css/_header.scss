@@ -28,7 +28,7 @@ header {
         width: 10%;
     }
     @include mq(xl) {
-        padding: 3rem 9rem;
+        padding: 3rem 0rem;
     }
 }
 
@@ -40,8 +40,10 @@ nav {
     @include mq(xl) {
         z-index: 1001;
         .nav-pc {
-            margin: 0 11rem 0 0;
+            margin: 0;
+            padding: 0;
             display: flex;
+            align-items: center;
             li {
                 margin: 3rem 2rem;
                 font: {
@@ -61,5 +63,6 @@ nav {
         justify-content: space-between;
         display: flex;
         width: 100vw;
+        padding: 0rem 10rem
     }
 }

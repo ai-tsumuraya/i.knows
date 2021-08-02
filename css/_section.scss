@@ -20,6 +20,9 @@
 
 main {
     padding: 3rem;
+    @include mq(xl) {
+        padding: 10rem 20rem;
+    }
 }
 
 .section-title-box {

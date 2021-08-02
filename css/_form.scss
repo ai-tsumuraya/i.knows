@@ -89,14 +89,13 @@ a.details-link {
 
 form {
     @include mq(xl) {
-        width: 82vw;
+        width: 60vw;
         ul {
-            display: flex;   
+            display: flex;
             align-content: space-between;
             justify-content: space-between;
             align-items: center;
-            padding: 2rem 4rem;
-            margin: 5rem;
+            padding: 2rem 0rem;
         }
     }
 }
@@ -109,4 +108,10 @@ form {
 
 .service-opt {
     margin-right: 1rem;
+}
+
+div.submit-box {
+    margin: 0;
+    justify-content: flex-end;
+    display: flex;
 }

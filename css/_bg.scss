@@ -17,7 +17,8 @@
     @include mq(xl) {
         filter: blur(2vw);
         width: 50%;
-        height: 50%;
+        height: 40%;
+        left: -27rem;
         
     }
 }
@@ -32,9 +33,9 @@
     @include mq(xl) {
         filter: blur(2vw);
         width: 40%;
-        height: 50%;
+        height: 40%;
         top: 57rem;
-        left: 80rem;
+        left: 67rem;
     }
 }
 .bubble-bg-purple {
@@ -47,9 +48,9 @@
     @include mq(xl) {
         filter: blur(2vw);
         width: 50%;
-        height: 65%;
-        bottom: -160rem;
-        left: -30rem;
+        height: 50%;
+        bottom: -147rem;
+        left: -31rem;
     }
 }
 
